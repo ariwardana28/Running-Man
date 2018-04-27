@@ -10,7 +10,9 @@ public class char1 extends Actor
 {
     private int vSpeed=7;
     private int speed=5;
-    private int acceleration=2;
+    private int acceleration=1;
+    private int jumpStrength=17;
+
     /**
      * Act - do whatever the char1 wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -34,6 +36,24 @@ public class char1 extends Actor
             setImage("char1.png");
             moveRight();
         }
+        if (Greenfoot.isKeyDown("up"))
+        {
+            setImage("char1.png");
+            if(ontanah())
+            {
+                jump();
+            }
+            else{
+                fall();
+            }
+        }
+
+    }
+     
+    public void jump()
+    {
+        speed=-jumpStrength;
+        fall();
     }
     
     public void checkFall()
@@ -43,7 +63,7 @@ public class char1 extends Actor
             speed=0;
         }
         else{
-            fall();
+             fall();
         }
     }
     
