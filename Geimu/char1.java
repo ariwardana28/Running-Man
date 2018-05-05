@@ -11,18 +11,30 @@ public class char1 extends Actor
     private int vSpeed=7;
     private int speed=5;
     private int acceleration=1;
-    private int jumpStrength=17;
+    private int jumpStrength=30;
 
     /**
      * Act - do whatever the char1 wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
+    
 
+    
     public void act() 
     {
+        {
         checkKeys();
         checkFall();
+        }
+        
+       if (getOneIntersectingObject(pohon.class)!=null){
+        Greenfoot.stop ();
+        getWorld().addObject (new gameover(),
+        getWorld().getWidth()/2,
+        getWorld().getHeight()/2);
+       }
     }
+    
     
     private void checkKeys()
     {
