@@ -31,7 +31,7 @@ public class world extends World
         {
             pohon pohon=new pohon();
             
-            addObject(pohon, 500, 600);
+            addObject(pohon, 400, 320);
             
             counter=0;
         }
