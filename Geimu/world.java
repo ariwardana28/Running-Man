@@ -10,7 +10,7 @@ public class world extends World
 {
     public char1 char1=new char1();
     public tanah tanah=new tanah();
-
+  
     int counter=0;
     /**
      * Constructor for objects of class world.
