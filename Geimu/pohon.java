@@ -14,6 +14,6 @@ public class pohon extends Actor
      */
     public void act() 
     {
-        setLocation(getX()-4, getY());
+        move (-4);
     }    
 }

@@ -10,8 +10,8 @@ public class world extends World
 {
     public char1 char1=new char1();
     public tanah tanah=new tanah();
-  
-    int counter=0;
+    
+    int loop=0;
     /**
      * Constructor for objects of class world.
      * 
@@ -26,15 +26,28 @@ public class world extends World
     
     public void act()
     {
-        counter++;
-        if(counter==100)
-        {
-            pohon pohon=new pohon();
-            
-            addObject(pohon, 400, 320);
-            
-            counter=0;
+        int acak=Greenfoot.getRandomNumber(1);
+        if(loop==0){
+            addObject(new pohon(),600,600-(50)-acak);
+            loop=-100;
+        }else{
+            loop++;
         }
     }
+    
+    public class Counter1 extends Actor
+{
+    int score = 0;
+    /**
+     * Act - do whatever the Counter1 wants to do. This method is called whenever
+     * the 'Act' or 'Run' button gets pressed in the environment.
+     */
+
+    public void addScore()
+    {
+        score++;
+    }
+}
+
 }
 
