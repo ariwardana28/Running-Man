@@ -10,8 +10,11 @@ public class world extends World
 {
     public char1 char1=new char1();
     public tanah tanah=new tanah();
+    int pohon_pertama=200;
+    int pohoncounter=0;
+    int score=0;
+    int charcounter=0;
     
-    int loop=0;
     /**
      * Constructor for objects of class world.
      * 
@@ -20,18 +23,28 @@ public class world extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1);
+        setPaintOrder(pohon.class, char1.class, gameover.class, tanah.class);
         addObject(tanah,300,600);
         addObject(char1,30,325);
     }
     
     public void act()
     {
-        int acak=Greenfoot.getRandomNumber(1);
-        if(loop==0){
-            addObject(new pohon(),600,600-acak);
-            loop=-75;
-        }else{
-            loop++;
+        pohoncounter++;
+        //System.out.println(counter);
+        if (pohoncounter % 100 ==0){
+            pohon pohon1 = new pohon();
+            addObject( pohon1, 600,600);
+        }
+
+        
+        if (pohoncounter == pohon_pertama){
+            if (charcounter % 100 == 0){
+                score++;
+                System.out.println(score);
+            }
+            charcounter++;
+
         }
     }
     
