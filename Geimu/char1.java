@@ -28,10 +28,8 @@ public class char1 extends Actor
         }
         
        if (getOneIntersectingObject(pohon.class)!=null){
+        getWorld().addObject (new gameover(),getWorld().getWidth()/2,getWorld().getHeight()/2);
         Greenfoot.stop ();
-        getWorld().addObject (new gameover(),
-        getWorld().getWidth()/2,
-        getWorld().getHeight()/2);
        }
     }
     
@@ -40,17 +38,14 @@ public class char1 extends Actor
     {
         if (Greenfoot.isKeyDown("left"))
         {
-
-            moveLeft();
+            move(-7);
         }
         if (Greenfoot.isKeyDown("right"))
         {
- 
-            moveRight();
+            move(7);
         }
         if (Greenfoot.isKeyDown("up"))
         {
-
             if(ontanah())
             {
                 jump();
@@ -90,14 +85,5 @@ public class char1 extends Actor
         setLocation(getX(), getY()+speed);
         speed=speed+acceleration;
     }
-    
-    public void moveRight()
-    {
-        setLocation(getX()+vSpeed, getY());
-    }
-    
-    public void moveLeft()
-    {
-        setLocation(getX()-vSpeed, getY());
-    }
+
 }

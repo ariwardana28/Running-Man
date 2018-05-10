@@ -28,8 +28,8 @@ public class world extends World
     {
         int acak=Greenfoot.getRandomNumber(1);
         if(loop==0){
-            addObject(new pohon(),600,600-(50)-acak);
-            loop=-100;
+            addObject(new pohon(),600,600-acak);
+            loop=-75;
         }else{
             loop++;
         }
