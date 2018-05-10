@@ -10,7 +10,7 @@ public class world extends World
 {
     public char1 char1=new char1();
     public tanah tanah=new tanah();
-    int pohon_pertama=200;
+    int pohon_pertama=180;
     int pohoncounter=0;
     int score=0;
     int charcounter=0;
@@ -38,13 +38,12 @@ public class world extends World
         }
 
         
-        if (pohoncounter == pohon_pertama){
+        if (pohoncounter >= pohon_pertama){
             if (charcounter % 100 == 0){
                 score++;
                 System.out.println(score);
             }
             charcounter++;
-
         }
     }
     
