@@ -11,12 +11,13 @@ public class char1 extends Actor
     private int vSpeed=7;
     private int speed=5;
     private int acceleration=1;
-    private int jumpStrength=30;
+    private int jumpStrength=17;
 
     /**
      * Act - do whatever the char1 wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
-     */    
+     */
+
     public void act() 
     {
         {
@@ -25,10 +26,8 @@ public class char1 extends Actor
         }
         
        if (getOneIntersectingObject(pohon.class)!=null){
+        getWorld().addObject (new gameover(),getWorld().getWidth()/2,getWorld().getHeight()/2);
         Greenfoot.stop ();
-        getWorld().addObject (new gameover(),
-        getWorld().getWidth()/2,
-        getWorld().getHeight()/2);
        }
     }
     
@@ -37,17 +36,14 @@ public class char1 extends Actor
     {
         if (Greenfoot.isKeyDown("left"))
         {
-            setImage("char1.png");
-            moveLeft();
+            move(-7);
         }
         if (Greenfoot.isKeyDown("right"))
         {
-            setImage("char1.png");
-            moveRight();
+            move(7);
         }
         if (Greenfoot.isKeyDown("up"))
         {
-            setImage("char1.png");
             if(ontanah())
             {
                 jump();
@@ -87,14 +83,5 @@ public class char1 extends Actor
         setLocation(getX(), getY()+speed);
         speed=speed+acceleration;
     }
-    
-    public void moveRight()
-    {
-        setLocation(getX()+vSpeed, getY());
-    }
-    
-    public void moveLeft()
-    {
-        setLocation(getX()-vSpeed, getY());
-    }
+
 }
