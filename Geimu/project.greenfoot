@@ -1,9 +1,13 @@
 #Greenfoot project file
 class.char1.image=char1.png
 class.char1.superclass=greenfoot.Actor
+<<<<<<< HEAD
 class.gameover.image=game_over.png
 class.gameover.superclass=greenfoot.Actor
 class.pohon.image=kaktusfix.png
+=======
+class.pohon.image=pohon1.png
+>>>>>>> 8c1c5a1de30d4317446568921cb747cc466053ad
 class.pohon.superclass=greenfoot.Actor
 class.tanah.image=tanah\ (2).jpeg
 class.tanah.superclass=greenfoot.Actor
@@ -18,6 +22,7 @@ dependency2.type=UsesDependency
 dependency3.from=world
 dependency3.to=pohon
 dependency3.type=UsesDependency
+<<<<<<< HEAD
 dependency4.from=world
 dependency4.to=gameover
 dependency4.type=UsesDependency
@@ -30,16 +35,30 @@ dependency6.type=UsesDependency
 dependency7.from=char1
 dependency7.to=gameover
 dependency7.type=UsesDependency
+=======
+dependency4.from=char1
+dependency4.to=tanah
+dependency4.type=UsesDependency
+>>>>>>> 8c1c5a1de30d4317446568921cb747cc466053ad
 editor.fx.0.height=0
 editor.fx.0.width=0
 editor.fx.0.x=0
 editor.fx.0.y=0
+<<<<<<< HEAD
 mainWindow.height=717
 mainWindow.width=922
 mainWindow.x=-5
 mainWindow.y=13
 package.numDependencies=7
 package.numTargets=5
+=======
+mainWindow.height=744
+mainWindow.width=1382
+mainWindow.x=-8
+mainWindow.y=-8
+package.numDependencies=4
+package.numTargets=4
+>>>>>>> 8c1c5a1de30d4317446568921cb747cc466053ad
 project.charset=UTF-8
 readme.height=58
 readme.name=@README
@@ -79,7 +98,11 @@ target4.width=80
 target4.x=0
 target4.y=0
 target5.height=50
+<<<<<<< HEAD
 target5.name=gameover
+=======
+target5.name=phnbck
+>>>>>>> 8c1c5a1de30d4317446568921cb747cc466053ad
 target5.showInterface=false
 target5.type=ClassTarget
 target5.typeParameters=
