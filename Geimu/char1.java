@@ -20,30 +20,25 @@ public class char1 extends Actor
 
     public void act() 
     {
-        {
         checkKeys();
         checkFall();
-        }
-        
-       if (getOneIntersectingObject(pohon.class)!=null){
-        getWorld().addObject (new gameover(),getWorld().getWidth()/2,getWorld().getHeight()/2);
-        Greenfoot.stop ();
-       }
     }
-    
     
     private void checkKeys()
     {
         if (Greenfoot.isKeyDown("left"))
         {
-            move(-7);
+            setImage("char1.png");
+            moveLeft();
         }
         if (Greenfoot.isKeyDown("right"))
         {
-            move(7);
+            setImage("char1.png");
+            moveRight();
         }
         if (Greenfoot.isKeyDown("up"))
         {
+            setImage("char1.png");
             if(ontanah())
             {
                 jump();
@@ -83,5 +78,14 @@ public class char1 extends Actor
         setLocation(getX(), getY()+speed);
         speed=speed+acceleration;
     }
-
+    
+    public void moveRight()
+    {
+        setLocation(getX()+vSpeed, getY());
+    }
+    
+    public void moveLeft()
+    {
+        setLocation(getX()-vSpeed, getY());
+    }
 }
