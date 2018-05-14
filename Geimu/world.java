@@ -8,32 +8,28 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class world extends World
 {
+    public class world extends World
+ {
     public char1 char1=new char1();
-    public tanah tanah=new tanah();
+     public tanah tanah=new tanah();
+    int pohon_pertama=200;
+    int pohon_pertama=180;
+     int pohoncounter=0;
+     int score=0;
+     int charcounter=0;
+    }
+public void act()
+         {
+ 
+         
+        if (pohoncounter == pohon_pertama){
+        if (pohoncounter >= pohon_pertama){
+             if (charcounter % 100 == 0){
+                 score++;
+                 System.out.println(score);
+             }
+             charcounter++;
 
-    int counter=0;
-    /**
-     * Constructor for objects of class world.
-     * 
-     */
-    public world()
-    {    
-        // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-        super(600, 400, 1);
-        addObject(tanah,300,600);
-        addObject(char1,30,325);
-    }
-    
-    public void act()
-    {
-        counter++;
-        if(counter==100)
-        {
-            pohon pohon=new pohon();
-            
-            addObject(pohon, getWidth(), getHeight()/2);
-            
-            counter=0;
-        }
-    }
-}
+         }
+     }
+   }
