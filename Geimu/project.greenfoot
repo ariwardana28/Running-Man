@@ -1,14 +1,12 @@
-<<<<<<< HEAD
-#Greenfoot properties
-#Sun May 13 15:24:24 SGT 2018
-target4.type=ClassTarget
-=======
 #Greenfoot project file
+=\=\=\=\=\=\=
+<<<<<<<=HEAD
+>>>>>>>=eab01fd605a7680bce742bc5557ecf56385d1011
 class.char1.image=char1.png
 class.char1.superclass=greenfoot.Actor
 class.gameover.image=game_over.png
 class.gameover.superclass=greenfoot.Actor
-class.pohon.image=kaktusfix.png
+class.pohon.image=pohon1.png
 class.pohon.superclass=greenfoot.Actor
 class.score.superclass=greenfoot.Actor
 class.tanah.image=tanah\ (2).jpeg
@@ -21,61 +19,29 @@ dependency1.type=UsesDependency
 dependency2.from=world
 dependency2.to=tanah
 dependency2.type=UsesDependency
->>>>>>> eab01fd605a7680bce742bc5557ecf56385d1011
 dependency3.from=world
-target3.height=50
-class.tanah.superclass=greenfoot.Actor
-target5.height=50
-readme.y=10
-dependency3.type=UsesDependency
-<<<<<<< HEAD
-readme.x=10
-target4.name=tanah
-target4.typeParameters=
-class.pohon.superclass=greenfoot.Actor
-readme.width=47
-class.pohon.image=pohon1.png
-editor.fx.0.width=0
-target1.height=50
-target5.type=ClassTarget
-target3.typeParameters=
-dependency4.from=char1
-mainWindow.width=1382
-dependency4.type=UsesDependency
-target2.width=80
-target5.name=phnbck
-class.char1.image=char1.png
-version=3.0.0
-dependency1.to=char1
-dependency2.to=tanah
-target1.width=80
-editor.fx.0.y=0
-editor.fx.0.x=0
-target2.typeParameters=
 dependency3.to=pohon
-target3.showInterface=false
-dependency4.to=tanah
-=======
+dependency3.type=UsesDependency
 dependency4.from=world
 dependency4.to=gameover
 dependency4.type=UsesDependency
 dependency5.from=char1
-dependency5.to=tanah
+dependency5.to=gameover
 dependency5.type=UsesDependency
 dependency6.from=char1
 dependency6.to=pohon
 dependency6.type=UsesDependency
 dependency7.from=char1
-dependency7.to=gameover
+dependency7.to=tanah
 dependency7.type=UsesDependency
 editor.fx.0.height=0
 editor.fx.0.width=0
 editor.fx.0.x=0
 editor.fx.0.y=0
-mainWindow.height=717
+mainWindow.height=744
 mainWindow.width=922
-mainWindow.x=-5
-mainWindow.y=13
+mainWindow.x=-8
+mainWindow.y=-8
 package.numDependencies=7
 package.numTargets=6
 project.charset=UTF-8
@@ -86,51 +52,20 @@ readme.x=10
 readme.y=10
 target1.height=50
 target1.name=score
->>>>>>> eab01fd605a7680bce742bc5557ecf56385d1011
 target1.showInterface=false
-target5.showInterface=false
-package.numTargets=4
-class.world.superclass=greenfoot.World
 target1.type=ClassTarget
-class.char1.superclass=greenfoot.Actor
 target1.typeParameters=
+target1.width=80
+target1.x=0
+target1.y=0
 target2.height=50
-<<<<<<< HEAD
-target5.y=0
-target4.height=50
-target5.x=0
-target1.name=world
-target4.y=0
-target4.x=0
-class.tanah.image=tanah (2).jpeg
-target3.y=0
-target3.x=0
-=======
 target2.name=world
 target2.showInterface=false
->>>>>>> eab01fd605a7680bce742bc5557ecf56385d1011
 target2.type=ClassTarget
-target2.y=0
-<<<<<<< HEAD
+target2.typeParameters=
+target2.width=80
 target2.x=0
-mainWindow.y=-8
-mainWindow.x=-8
-dependency1.from=world
-target5.width=80
-target1.y=0
-editor.fx.0.height=0
-target1.x=0
-dependency1.type=UsesDependency
-readme.height=58
-target2.name=pohon
-readme.name=@README
-package.numDependencies=4
-target3.type=ClassTarget
-target4.width=80
-dependency2.from=world
-dependency2.type=UsesDependency
-target5.typeParameters=
-=======
+target2.y=0
 target3.height=50
 target3.name=pohon
 target3.showInterface=false
@@ -164,12 +99,4 @@ target6.width=80
 target6.x=0
 target6.y=0
 version=3.0.0
->>>>>>> eab01fd605a7680bce742bc5557ecf56385d1011
 world.lastInstantiated=world
-mainWindow.height=744
-target2.showInterface=false
-target3.name=char1
-class.world.image=langito.jpg
-project.charset=UTF-8
-target3.width=80
-target4.showInterface=false
