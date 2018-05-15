@@ -44,6 +44,7 @@ public class char1 extends Actor
         }
         if (Greenfoot.isKeyDown("up"))
         {
+            Greenfoot.playSound("jump.mp3");
             if(ontanah())
             {
                 jump();
@@ -51,6 +52,7 @@ public class char1 extends Actor
             else{
                 fall();
             }
+            
         }
 
     }
