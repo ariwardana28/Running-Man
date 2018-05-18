@@ -27,7 +27,13 @@ public class char1 extends Actor
         
        if (getOneIntersectingObject(pohon.class)!=null){
         getWorld().addObject (new gameover(),getWorld().getWidth()/2,getWorld().getHeight()/2);
+        
+        getWorld().addObject (new buttons(),getWorld().getWidth()/2,getWorld().getHeight());
         Greenfoot.stop ();
+        
+        Greenfoot.setWorld(new play());
+        Greenfoot.delay(1200);
+        Greenfoot.start();
        }
     }
     
