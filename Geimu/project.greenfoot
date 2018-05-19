@@ -13,6 +13,7 @@ target6.typeParameters=
 dependency9.to=world
 target1.height=50
 class.char1.superclass=greenfoot.Actor
+<<<<<<< HEAD
 target8.y=0
 dependency16.type=UsesDependency
 target8.x=0
@@ -55,6 +56,16 @@ mainWindow.width=1382
 readme.width=47
 target9.name=pohon
 target5.height=50
+=======
+class.gameover.image=gameover.png
+class.gameover.superclass=greenfoot.Actor
+class.play.image=mulai.jpg
+class.play.superclass=greenfoot.World
+class.pohon.image=kaktusfix.png
+class.pohon.superclass=greenfoot.Actor
+class.score.superclass=greenfoot.Actor
+class.tanah.image=tanah\ (2).jpeg
+>>>>>>> 40d9c0c5af31b5c3ce68b7055ed6f59be8d4b38b
 class.tanah.superclass=greenfoot.Actor
 target10.name=char1
 dependency13.type=UsesDependency
