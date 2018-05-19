@@ -31,9 +31,7 @@ public class char1 extends Actor
         getWorld().addObject (new buttons(),getWorld().getWidth()/2,getWorld().getHeight());
         Greenfoot.stop ();
         
-        Greenfoot.setWorld(new play());
-        Greenfoot.delay(1200);
-        Greenfoot.start();
+      
        }
     }
     

@@ -17,8 +17,9 @@ public class buttons extends Actor
         // Add your action code here.
         if(Greenfoot.mouseClicked(this))
         {
-             Greenfoot.setWorld(new play());
-             
+             Greenfoot.start();
+              Greenfoot.setWorld(new world());
+              
     }
     }    
 }

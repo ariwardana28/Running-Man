@@ -10,6 +10,7 @@ public class world extends World
 {
     public char1 char1=new char1();
     public tanah tanah=new tanah();
+    public buttons buttons=new buttons();
     int pohon_pertama=-5000;
     int pohoncounter=0;
     int score=0;
@@ -29,6 +30,7 @@ public class world extends World
         score1=new score();
         score1.setScore(0);
         addObject(score1,300,100);
+        addObject(buttons,560,25);
         
     }
     
