@@ -17,7 +17,8 @@ public class exit extends Actor
         // Add your action code here.
         if(Greenfoot.mouseClicked(this))
         {
-            Greenfoot.setWorld(new world());
+            System.exit(10);
+            
     }  
 }
 }

@@ -17,7 +17,7 @@ public class about extends Actor
         // Add your action code here.
         if(Greenfoot.mouseClicked(this))
         {
-            Greenfoot.setWorld(new world());
+            Greenfoot.setWorld(new tent());
     }  
 }
 }
